@@ -18,6 +18,9 @@ module.exports = {
         return substraction + arguments[0];
     },
     multiply: function() {
-        return arguments[0] * arguments[1];
+         var multiplication = _.reduce(arguments, function(memo, numb) {
+            return memo * numb;
+        }, 1);
+        return multiplication;
     }
 }

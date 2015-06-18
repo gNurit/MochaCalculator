@@ -56,10 +56,10 @@ describe("Calculator", function() {
             expect(calculator.multiply(5,9)).to.equal(45);
         });
         it("Should multiply a collection of numbers", function(){
-            expect(calculator.multiply(1,-2,5)).to.equal(3);
+            expect(calculator.multiply(1,-2,5)).to.equal(-10);
             expect(calculator.multiply(-4,5, 2, 1, 0)).to.equal(0);
             expect(calculator.multiply(2,1,-1,2)).to.equal(-4);
-            expect(calculator.multiply(-5,5,5,5)).to.equal(625);
+            expect(calculator.multiply(-5,5,5,5)).to.equal(-625);
         });
         it("Should throw an exception if any of the items in the array is not a number", function(){
             expect(calculator.multiply(1,-2, 4, 5, true)).to.throw(/not a number/);
