@@ -25,5 +25,24 @@ describe("Calculator", function() {
             expect(calculator.add(-11,12, 4, 5)).to.equal(10);
             expect(calculator.add(-5,-9, -2, -14, -1)).to.equal(-31);
         });
+    });
+    describe(".substract", function(){
+        it("Should substract two numbers if they are positive", function(){
+            expect(calculator.substract(1,2)).to.equal(-1);
+            expect(calculator.substract(4,5)).to.equal(-1);
+            expect(calculator.substract(11,12)).to.equal(-1);
+            expect(calculator.substract(5,9)).to.equal(-4);
+        });
+        it("Should substract two numbers regardless of sign", function(){
+            expect(calculator.substract(1,-2)).to.equal(3);
+            expect(calculator.substract(-4,5)).to.equal(-9);
+            expect(calculator.substract(-11,12)).to.equal(-23);
+            expect(calculator.substract(-5,-9)).to.equal(4);
+        });
+        it("Should substract any amount of numbers passed into the function", function(){
+            expect(calculator.substract(1,-2, 4, 5, 6)).to.equal(-12);
+            expect(calculator.substract(-11,12, 4, 5)).to.equal(-32);
+            expect(calculator.substract(-5,-9, -2, -14, -1)).to.equal(21);
+        });
     })
 })
