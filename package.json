@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ovidio4usa/MochaCalculator/issues"
   },
-  "homepage": "https://github.com/ovidio4usa/MochaCalculator"
+  "homepage": "https://github.com/ovidio4usa/MochaCalculator",
+  "devDependencies": {
+    "chai": "^3.0.0"
+  }
 }
