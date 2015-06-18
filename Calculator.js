@@ -2,7 +2,7 @@ var _ = require("underscore");
 
 module.exports = {
     add: function() {
-        sum = _.reduce(arguments, function(memo, numb) {
+        var sum = _.reduce(arguments, function(memo, numb) {
             return memo + numb;
         }, 0);
         return sum;
@@ -16,5 +16,8 @@ module.exports = {
         }
 
         return substraction + arguments[0];
+    },
+    multiply: function() {
+        
     }
 }
