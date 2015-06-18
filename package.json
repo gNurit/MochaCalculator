@@ -21,5 +21,8 @@
   "homepage": "https://github.com/ovidio4usa/MochaCalculator",
   "devDependencies": {
     "chai": "^3.0.0"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
   }
 }
