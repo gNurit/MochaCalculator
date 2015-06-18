@@ -52,7 +52,7 @@ describe("Calculator", function() {
         it("Should multiply two numbers", function(){
             expect(calculator.multiply(1,2)).to.equal(2);
             expect(calculator.multiply(4,5)).to.equal(20);
-            expect(calculator.multiply(11,-12)).to.equa(-121);
+            expect(calculator.multiply(11,-12)).to.equal(-132);
             expect(calculator.multiply(5,9)).to.equal(45);
         });
         it("Should multiply a collection of numbers", function(){

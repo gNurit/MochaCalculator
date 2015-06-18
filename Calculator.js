@@ -18,6 +18,6 @@ module.exports = {
         return substraction + arguments[0];
     },
     multiply: function() {
-        
+        return arguments[0] * arguments[1];
     }
 }
