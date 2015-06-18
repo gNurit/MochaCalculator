@@ -1,0 +1,22 @@
+{
+  "name": "MochaCalculator",
+  "version": "1.0.0",
+  "description": "A calculator done with testing in mind",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ovidio4usa/MochaCalculator.git"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "Ovidio R. Calvet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ovidio4usa/MochaCalculator/issues"
+  },
+  "homepage": "https://github.com/ovidio4usa/MochaCalculator"
+}
