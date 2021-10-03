@@ -23,5 +23,12 @@ module.exports = {
             return memo * numb;
         }, 1);
         return multiplication;
+    },
+    divide: function() {
+         var division = _.reduce(arguments, function(memo, numb) {
+             if (isNaN(numb)) { throw "not a number"}
+            return memo / numb;
+        }, 1);
+        return division;
     }
 }
